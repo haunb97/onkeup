@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+
+<center>
+    <h1>Type anything slowly</h1>
+    <textarea id="input" onkeyup="hate()" style="width: 300px;height: 100px"></textarea>
+</center>
+<script>
+    let a = 'xin thua mot lan';
+    let arr = [];
+    let count =0;
+    function hate() {
+        for (;count<a.length;){
+            arr.push(a[count]);
+            document.getElementById('input').value = arr.join('');
+            count++;
+            if(count==a.length){
+                count = 0;
+                arr = []
+            }
+            break;
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>
